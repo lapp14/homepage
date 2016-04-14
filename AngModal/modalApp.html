@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset=utf-8 />
+    <title>Test</title>
+
+    <style>
+        div.other-link { display: inline-block; border: 1px solid black; padding: 8px; }
+        div.modal { display: inline-block; position: relative; }
+        div.modal div.modal-title { border: 1px solid black; padding: 8px; }
+        div.modal div.modal-content { border: 1px solid black; position: absolute; right: 0; width: 300px;}
+    </style>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.3/angular.min.js"></script>
+    <script src="modalApp.js"></script>
+
+</head>
+<body ng-controller="appCtrl">
+
+    <div class="other-link">Number 1</div>
+    <div class="other-link">Number 2</div>
+    <div class="other-link">Number 3</div>
+    <div class="other-link">Number 4</div>
+    <div class="other-link">Number 5</div>
+    
+    <modal></modal>
+</body>
+</html>

@@ -1,0 +1,10 @@
+
+<div class="modal" ng-click="show();$event.stopPropagation()">
+	<div class="modal-title">Title Title <button ng-click="$event.stopPropagation()" ng-show="state.active">Stop it eh</button></div>
+	<div class="modal-content" ng-show="showModal" ng-click="$event.stopPropagation()">
+	  	<p>info and other stuff</p>
+	  	<label for="value">Input Value</label>
+	  	<input type="number" name="value" ng-model="model.bmp" ng-change="valueChange()"/>
+		<button ng-click="button.click()">{{button.text}}</button>
+	</div>
+</div>
